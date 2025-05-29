@@ -1,5 +1,28 @@
 .hero-heading{
+    z-index: 5;
     font-size: 5em;
+    /* color: #fffefd; */
+}
+
+.heroBackgroundOpacity{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.328);
+    z-index: 1;
+}
+
+.heroText{
+    z-index: 5;
+}
+
+.heroSection{
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    background-image: url("/spanish-girl-header.jpg");  
 }
 
 .aboutSection{
@@ -41,3 +64,16 @@
     color: white;
 }
 
+.newsletterLeft{
+    background-image: url("/left-newsletter-fabric.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.newsletterRight{
+     background-image: url("/saddle-navajo-newsletter.jpg");
+     background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 130%;
+    background-position: bottom;
+}
