@@ -1,3 +1,43 @@
 .hero-heading{
     font-size: 5em;
 }
+
+.aboutSection{
+    background-color: #EBE7DC;
+}
+
+.cta{
+    background-color: #FD6A21;
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+.furnitureOffer{
+    min-height: 500px;
+    background-image: url("/furniture-offer.jpg");
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+.backgroundOpacity{
+    background-color: rgba(0, 0, 0, 0.324);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.furnitureBody{
+    z-index: 5;
+}
+
+.newsletterBox{
+    background-color: #C65535;
+    min-height: 500px;
+}
+
+.emailInput::placeholder{
+    color: white;
+}
+
