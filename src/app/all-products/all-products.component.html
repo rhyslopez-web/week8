@@ -1,6 +1,15 @@
-<!-- <div class="min-vh-100 d-flex justify-content-center align-items-center flex-column">
-    <div class="border" *ngFor="let product of products">
-        <h2>{{product.product_title}}</h2>
-        <p>{{product.product_details}}</p>
+<div class="container-fluid min-vh-100 d-flex align-items-center justify-content-center py-5">
+    <div class="row gap-5 d-flex justify-content-center">
+        <div class="col d-flex col-lg-3 justify-content-center" *ngFor="let product of products">
+            <div class="card" style="width: 18rem;">
+                <img src={{product.product_image}} class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{product.product_title}}</h5>
+                    <span class="text-success">${{product.price}}</span>
+                    <p class="card-text">{{product.product_details}}</p>
+                    <a href="#" class="btn w-100 cardButtonColor text-white">Go somewhere</a>
+                </div>
+            </div>
+        </div>
     </div>
-</div> -->
+</div>
