@@ -4,12 +4,12 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-all-products',
+  selector: 'app-admin',
   imports: [CommonModule, RouterModule],
-  templateUrl: './all-products.component.html',
-  styleUrl: './all-products.component.css'
+  templateUrl: './admin.component.html',
+  styleUrl: './admin.component.css'
 })
-export class AllProductsComponent {
+export class AdminComponent {
 
   products:any[] = []
 
@@ -26,7 +26,5 @@ export class AllProductsComponent {
 
       
     }
-
-    
 
 }

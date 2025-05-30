@@ -1,0 +1,49 @@
+<div class="container min-vh-100 d-flex flex-column justify-content-center align-items-center">
+
+    <div>
+        <h1>Add A New Product</h1>
+    </div>
+
+    <p *ngIf="product_title">This is your title: {{product_title}}</p>
+
+    <form class="w-100">
+        <div class="mb-5">
+            <label for="product-title" class="form-label">Title</label>
+            <input type="text" class="form-control" id="product-title" aria-describedby="" [(ngModel)]="product_title" name="product_title">
+        </div>
+
+        <div class="mb-5">
+            <label for="product-description" class="form-label">Description</label>
+            <input type="text" class="form-control" id="product-description" aria-describedby="" [(ngModel)]="product_details" name="product_details">
+        </div>
+
+        <div class="mb-5">
+            <label for="product-image" class="form-label">Image Link</label>
+            <input type="text" class="form-control" id="product-image" aria-describedby="" [(ngModel)]="product_image" name="product_image">
+        </div>
+
+        <!-- Stock and Price -->
+        
+        <div class="d-flex gap-5 align-items-center">
+            <div class="mb-5">
+                <label for="price" class="form-label">Price</label>
+                <input type="number" class="form-control" id="price" aria-describedby="" [(ngModel)]="price" name="price">
+            </div>
+
+    
+            <div class="form-check form-switch mb-5">
+                <input class="form-check-input" type="checkbox" role="switch" id="todays-deals" [(ngModel)]="availability" name="availability">
+                <label class="form-check-label" for="todays-deals">Todays Deals?</label>
+            </div>
+
+        </div>
+        
+        <div class="form-check form-switch mb-5">
+            <input class="form-check-input" type="checkbox" role="switch" id="todays-deals" [(ngModel)]="todays_deals" name="todaysDeals">
+            <label class="form-check-label" for="todays-deals">Todays Deals?</label>
+        </div>
+
+
+        <button type="submit" class="btn btn-primary" (click)="addNewProduct()">Submit</button>
+    </form>
+</div>

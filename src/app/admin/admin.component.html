@@ -1,0 +1,46 @@
+<div class="container min-vh-100 d-flex flex-column align-items-center justify-content-center gap-5">
+    <div class="row w-100">
+        <div class="col-6">
+            <h1>Welcome Admin!</h1>
+        </div>
+    
+        <div class="col-6 d-flex justify-content-end">
+            <div>
+                <a class="btn btn-success" [routerLink]="['/addproduct']">
+                    Add Product
+                </a>
+            </div>
+        </div>
+    </div>
+    
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Title</th>
+          <th scope="col">Details</th>
+          <th scope="col">Price</th>
+          <th scope="col">inStock</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of products" class="">
+          <td class="">{{product.product_id}}</td>
+          <td class="">{{product.product_title}}</td>
+          <td class="">{{product.product_details}}</td>
+          <td class="text-success">${{product.price}}</td>
+          <td [ngClass]="product.availability ? 'text-success' : 'text-danger'">
+            {{product.availability ? "Yes" : "No"}}
+          </td>
+          <td>
+            <a class="btn btn-primary">
+                Edit
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+
