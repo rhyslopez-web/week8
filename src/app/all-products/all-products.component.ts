@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-all-products',
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './all-products.component.html',
   styleUrl: './all-products.component.css'
 })
